@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "component",
+    "title": "create functional react component",
+    "type": "object",
+    "description": "generates a functional react component",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "name of the component",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            },
+            "x-prompt" : "component-name"
+        },
+        "path": {
+            "type": "string",
+            "description": "path",
+            "default": "src"
+        }
+    },
+    "required": [
+        "name"
+    ]
+}

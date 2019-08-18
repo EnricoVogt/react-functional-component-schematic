@@ -1,0 +1,24 @@
+{
+  "name": "rgen",
+  "version": "0.0.1",
+  "description": "schematics for react",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && jasmine src/**/*_spec.js",
+    "dry": "tsc -p tsconfig.json && schematics .:component --debug=false"
+  },
+  "keywords": [
+    "schematics"
+  ],
+  "author": "Enrico Vogt",
+  "license": "MIT",
+  "schematics": "./src/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "^7.3.4",
+    "@angular-devkit/schematics": "^7.3.4",
+    "@types/jasmine": "^3.0.0",
+    "@types/node": "^8.0.31",
+    "jasmine": "^3.0.0",
+    "typescript": "~3.2.2"
+  }
+}

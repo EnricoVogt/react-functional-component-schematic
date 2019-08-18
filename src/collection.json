@@ -1,0 +1,10 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "component": {
+      "description": "A simple schematic to create a react component.",
+      "factory": "./component/index#rc",
+      "schema": "./component/schema.json"
+    }
+  }
+}
